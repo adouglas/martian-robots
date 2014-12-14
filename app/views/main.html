@@ -1,0 +1,22 @@
+<form role="form">
+<div class="row">
+  <div class="col-md-5">
+    <div class="form-group">
+      <label for="instructionsInput">Instructions</label>
+      <textarea class="form-control" id="instructionsInput" rows="10" ng-model="$parent.txtInput"></textarea>
+    </div>
+  </div>
+  <div class="col-md-5">
+    <div class="form-group">
+      <label for="outputDisplay">Output</label>
+      <textarea class="form-control" id="outputDisplay" rows="10" readonly="true" ng-model="$parent.txtOutput"></textarea>
+    </div>
+  </div>
+  <div class="col-md-2">
+    <div class="control-button-group">
+      <button type="button" class="btn btn-primary" ng-click="btnStart()">Start mission</button>
+      <button type="button" class="btn btn-default" ng-click="btnClear()">Clear all</button>
+    </div>
+  </div>
+</div>
+</form>
